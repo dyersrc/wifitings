@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f2" displayName="include" projectFiles="true">
+      <itemPath>../../include/DbgPrint.h</itemPath>
+      <itemPath>../../include/leelog.h</itemPath>
+      <itemPath>../include/wifitings.h</itemPath>
+      <itemPath>../include/wifitingsinterface.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="tools" projectFiles="true">
+      <itemPath>../../tools/cmd.cpp</itemPath>
+      <itemPath>../../tools/cmd.h</itemPath>
+      <itemPath>../../tools/int_tools.cpp</itemPath>
+      <itemPath>../../tools/int_tools.h</itemPath>
+      <itemPath>../../tools/llargekeymap.cpp</itemPath>
+      <itemPath>../../tools/llargekeymap.h</itemPath>
+      <itemPath>../../tools/mac_tools.cpp</itemPath>
+      <itemPath>../../tools/mac_tools.h</itemPath>
+      <itemPath>../../tools/stringprt.cpp</itemPath>
+      <itemPath>../../tools/stringprt.h</itemPath>
+      <itemPath>../../tools/time_tools.cpp</itemPath>
+      <itemPath>../../tools/time_tools.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+      <itemPath>ieee80211.h</itemPath>
+      <itemPath>liw.h</itemPath>
+      <itemPath>nl80211.h</itemPath>
+      <itemPath>realwifitings.h</itemPath>
+      <itemPath>wifipcap.h</itemPath>
+      <itemPath>wireless.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <itemPath>dllmain.cpp</itemPath>
+      <itemPath>ieee80211.cpp</itemPath>
+      <itemPath>liw.cpp</itemPath>
+      <itemPath>realwifitings.cpp</itemPath>
+      <itemPath>wifipcap.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="测试文件"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../tools</Elem>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <incDir>
+            <pElem>../include</pElem>
+            <pElem>../../include</pElem>
+            <pElem>..</pElem>
+          </incDir>
+          <commandLine>-fvisibility=hidden</commandLine>
+          <preprocessorList>
+            <Elem>WIFITINGS_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../lib</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>./</pElem>
+          </linkerDynSerch>
+          <commandLine>-lboost_system -lboost_thread -lpcap -lpthread -lnl -lleelog</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../include/DbgPrint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../include/leelog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/cmd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/cmd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/int_tools.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/int_tools.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/llargekeymap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/llargekeymap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/mac_tools.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/mac_tools.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/stringprt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/stringprt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/time_tools.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/time_tools.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../include/wifitings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../include/wifitingsinterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dllmain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ieee80211.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ieee80211.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="liw.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="liw.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="nl80211.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="realwifitings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="realwifitings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wifipcap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="wifipcap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wireless.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+          <incDir>
+            <pElem>../../include</pElem>
+          </incDir>
+          <commandLine>-fvisibility=hidden</commandLine>
+          <preprocessorList>
+            <Elem>WIFITINGS_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../lib</pElem>
+          </linkerAddLib>
+          <linkerDynSerch>
+            <pElem>./</pElem>
+          </linkerDynSerch>
+          <commandLine>-lboost_system -lboost_thread -lpcap -lpthread -lnl -lleelog</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../include/DbgPrint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../include/leelog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/cmd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/cmd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/int_tools.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/int_tools.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/llargekeymap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/llargekeymap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/mac_tools.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/mac_tools.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/stringprt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/stringprt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../tools/time_tools.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../tools/time_tools.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../include/wifitings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../include/wifitingsinterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dllmain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ieee80211.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ieee80211.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="liw.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="liw.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="nl80211.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="realwifitings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="realwifitings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wifipcap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="wifipcap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="wireless.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
