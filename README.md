@@ -5,12 +5,13 @@
 
     
 依赖库：
-libpcap
-libnl
-boost
+libpcap 
+libnl 
+boost 
 
 编译：
-make #编译debug版本
+make #编译debug版本 
+
 make all #编译debug和release版本
 
 使用：
