@@ -82,5 +82,3 @@ make all #编译debug和release版本
     //pWifiTings->stop()
 
     //releaseWifiTingsInstance(pWifiTings)
-
-
