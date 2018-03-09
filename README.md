@@ -32,9 +32,11 @@ make all #编译debug和release版本
         return;
     }
 
-    if (2 == nType) {//2.4G网卡
+    if (2 == nType) {
+	//2.4G网卡 
         pWifiTings->setFrequencyChanne(2);
-    } else if (5 == nType) {//5.8G网卡
+    } else if (5 == nType) {
+	//5.8G网卡 
         pWifiTings->setFrequencyChanne(5);
     } else {
         releaseWifiTingsInstance(pWifiTings);
@@ -50,8 +52,9 @@ make all #编译debug和release版本
     //2.4G网卡设置需要扫描的信道，可以在后期实时设置
     int nLenOfList = 13;
     int8_t lstChannel[13] = {
-        (int8_t)1, (int8_t)2, (int8_t)3, (int8_t)4, (int8_t)5, (int8_t)6, (int8_t)7, (int8_t)8,
-        (int8_t)9, (int8_t)10, (int8_t)11, (int8_t)12, (int8_t)13
+        (int8_t)1, (int8_t)2, (int8_t)3, (int8_t)4, (int8_t)5, 
+	(int8_t)6, (int8_t)7, (int8_t)8,(int8_t)9, (int8_t)10, 
+	(int8_t)11, (int8_t)12, (int8_t)13
     };
     pWifiTings->setChannel(lstChannel, nLenOfList);
     
@@ -59,8 +62,10 @@ make all #编译debug和release版本
     //中国支持的信道 149,153,157,161,165
     //int nLenOfList = 16;
     //int8_t lstChannel[16] = {
-    //    (int8_t)36, (int8_t)38, (int8_t)40, (int8_t)42, (int8_t)44, (int8_t)46, (int8_t)48, (int8_t)52,
-    //    (int8_t)56, (int8_t)60, (int8_t)64, (int8_t)149, (int8_t)153, (int8_t)157, (int8_t)161, (int8_t)165
+    //    (int8_t)36, (int8_t)38, (int8_t)40, (int8_t)42, 
+    //	  (int8_t)44, (int8_t)46, (int8_t)48, (int8_t)52,
+    //    (int8_t)56, (int8_t)60, (int8_t)64, (int8_t)149, 
+    //    (int8_t)153, (int8_t)157, (int8_t)161, (int8_t)165
     //};
     //pWifiTings->setChannel(lstChannel, nLenOfList);
     
