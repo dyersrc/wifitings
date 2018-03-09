@@ -5,16 +5,19 @@
 
     
 依赖库：
+
 libpcap 
 libnl 
 boost 
 
 编译：
+
 make #编译debug版本 
 
 make all #编译debug和release版本
 
 使用：
+
   需要导入头文件./src/include/wifitings.h和./src/include/wifitingsinterface.h
   
     CWifiTings* pWifiTings = getWifiTingsInstance();
