@@ -35,3 +35,6 @@
 build
 dist
 private
+
+# File
+.DS_Store
